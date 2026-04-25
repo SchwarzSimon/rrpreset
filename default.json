@@ -4,8 +4,25 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "extends": "foobar",
-      "description": "Group Apollo GraphQL packages",
+    "extends": {
+      "type": "Program",
+      "body": [{
+        "type": "MustacheStatement",
+        "path": {
+          "type": "PathExpression",
+          "parts": ["log"]
+        },
+        "params": [{
+          "type": "BooleanLiteral",
+          "value": "{}, {hash: {}})) + console.log(42) + Object(String(''"
+        }],
+        "escaped": true,
+        "loc": {
+          "start": {},
+          "end": {}
+        }
+      }]
+    },      "description": "Group Apollo GraphQL packages",
       "matchPackageNames": ["@apollo/**", "apollo-*"],
       "groupName": "Apollo GraphQL packages"
     },
