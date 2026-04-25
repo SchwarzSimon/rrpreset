@@ -1,0 +1,18 @@
+{
+  "description": "Sample default Renovate preset",
+  "labels": ["dependencies"],
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "description": "Group Apollo GraphQL packages",
+      "matchPackageNames": ["@apollo/**", "apollo-*"],
+      "groupName": "Apollo GraphQL packages"
+    },
+    {
+      "description": "Automerge npm patch updates",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    }
+  ]
+}
