@@ -27,6 +27,7 @@
       "groupName": "Apollo GraphQL packages"
     },
     {
+      "extends": "boofar22",
       "description": "Automerge npm patch updates",
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["patch"],
