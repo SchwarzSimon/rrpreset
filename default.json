@@ -4,7 +4,7 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "extends": "foobar"
+      "extends": "foobar",
       "description": "Group Apollo GraphQL packages",
       "matchPackageNames": ["@apollo/**", "apollo-*"],
       "groupName": "Apollo GraphQL packages"
