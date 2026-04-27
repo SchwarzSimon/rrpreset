@@ -1,37 +1,4 @@
 {
   "description": "Sample default Renovate preset",
   "labels": ["dependencies"],
-  "dependencyDashboard": true,
-  "packageRules": [
-    {
-    "extends": {
-      "type": "Program",
-      "body": [{
-        "type": "MustacheStatement",
-        "path": {
-          "type": "PathExpression",
-          "parts": ["log"]
-        },
-        "params": [{
-          "type": "BooleanLiteral",
-          "value": "{}, {hash: {}})) + console.log(42) + Object(String(''"
-        }],
-        "escaped": true,
-        "loc": {
-          "start": {},
-          "end": {}
-        }
-      }]
-    },      "description": "Group Apollo GraphQL packages",
-      "matchPackageNames": ["@apollo/**", "apollo-*"],
-      "groupName": "Apollo GraphQL packages"
-    },
-    {
-      "extends": "boofar22",
-      "description": "Automerge npm patch updates",
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["patch"],
-      "automerge": true
-    }
-  ]
 }
